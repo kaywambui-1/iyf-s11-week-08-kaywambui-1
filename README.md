@@ -2,7 +2,7 @@
 
 ## Author
 - **Name:** Christine Kamau
-- **GitHub:** kaywambui-1
+- **GitHub:**[@kaywambui-1](https://github.com/kaywambui-1)
 - **Date:** August 09, 2026
 
 ## Project Description
