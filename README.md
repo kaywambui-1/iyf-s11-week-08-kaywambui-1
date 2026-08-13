@@ -1,16 +1,37 @@
-# React + Vite
+# Week 8: React Fundamentals — Components, Props, State & Events
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Author
+- **Name:** Christine Kamau
+- **GitHub:** kaywambui-1
+- **Date:** August 09, 2026
 
-Currently, two official plugins are available:
+## Project Description
+A solo practice project covering Lesson 15 (JSX, components, props, component composition) and Lesson 16 (state and event handling) — foundational React concepts built ahead of the CommunityHub team project. Built with React + Vite.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Technologies Used
+- React
+- Vite
+- JavaScript (ES6+)
+- ESLint
+- CSS
 
-## React Compiler
+## Features
+- **JSX basics** — heading, dynamic content, and conditional rendering ("Welcome back!" message)
+- **Reusable components** — `Header`, `Footer`, `PostCard`, `Sidebar`, `Button` built and composed together
+- **Props** — dynamic `Greeting` and `PostCard` components, a list of posts rendered from an array with `.map()`, and a `Button` with default prop values (variant, size, disabled)
+- **Component composition** — `Card` with `children` and an optional title prop, `Layout` wrapping `Header`/`main`/`Footer` via `children`, `UserGreeting` with early-return conditional rendering
+- **State with `useState`** — `Counter` (increment/decrement/reset), `Toggle` (boolean state), `UserForm` (multiple controlled inputs for name/email/age)
+- **Event handling** — multiple handler patterns in `EventExamples.jsx`, and a `ContactForm` using a single `formData` state object with computed property names and reset-on-submit
+- **Array state** — `TodoList` with add/toggle/delete using spread, `.map()`, and `.filter()`
+- **Lifting state up** — `Stats`, `LikeablePost`, and `PostList2` sharing like-count state, with a running total computed via `.reduce()`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## How to Run
+1. Clone this repository
+2. Run `npm install`
+3. Run `npm run dev`
 
-## Expanding the ESLint configuration
+## Lessons Learned
+Learned how to share state between sibling components (like LikeablePost and Stats) by moving that state up to their common parent (App.jsx).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Challenges Faced
+Managing multiple related pieces of form state individually (in UserForm) got repetitive.
